@@ -1,9 +1,9 @@
 name: Publish container image to GHCR
 
 on:
-  push:
-    branches:
-      - main  # Trigger on pushes to the main branch
+  workflow_dispatch:
+    # ignore changes to ISSUE_TEMPLATE files
+    #   - '.github/ISSUE_TEMPLATE/**'
     # paths:
     #   - '**/Dockerfile'
     #   - '.github/workflows/publish-image.yml'
