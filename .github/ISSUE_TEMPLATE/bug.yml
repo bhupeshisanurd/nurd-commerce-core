@@ -10,6 +10,20 @@ body:
     validations:
       required: true
   - type: textarea
+    id: logs
+    attributes:
+      label: Console Logs
+      description: Paste any relevant logs or error messages
+    validations:
+      required: false
+  - type: input
+    id: go_version
+    attributes:
+      label: Go Version
+      description: Paste the output of `go version`
+    validations:
+      required: true
+  - type: textarea
     id: comments
     attributes:
       label: Any comments
